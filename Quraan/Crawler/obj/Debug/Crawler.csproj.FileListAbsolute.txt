@@ -1,0 +1,10 @@
+D:\Private\Quraan\Quraan\Crawler\bin\Debug\Crawler.exe.config
+D:\Private\Quraan\Quraan\Crawler\bin\Debug\Crawler.exe
+D:\Private\Quraan\Quraan\Crawler\bin\Debug\Crawler.pdb
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.csprojAssemblyReference.cache
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.MainForm.resources
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.Properties.Resources.resources
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.csproj.GenerateResource.cache
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.csproj.CoreCompileInputs.cache
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.exe
+D:\Private\Quraan\Quraan\Crawler\obj\Debug\Crawler.pdb

@@ -1,0 +1,14 @@
+D:\Private\Quraan\Quraan\Crawler\bin\Release\Crawler.exe.config
+D:\Private\Quraan\Quraan\Crawler\bin\Release\Crawler.exe
+D:\Private\Quraan\Quraan\Crawler\bin\Release\Crawler.pdb
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.MainForm.resources
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.Properties.Resources.resources
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.csproj.GenerateResource.cache
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.csproj.CoreCompileInputs.cache
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.exe
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.pdb
+D:\Private\Quraan\Quraan\Crawler\bin\Release\Newtonsoft.Json.dll
+D:\Private\Quraan\Quraan\Crawler\bin\Release\Newtonsoft.Json.pdb
+D:\Private\Quraan\Quraan\Crawler\bin\Release\Newtonsoft.Json.xml
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.csprojAssemblyReference.cache
+D:\Private\Quraan\Quraan\Crawler\obj\Release\Crawler.csproj.CopyComplete

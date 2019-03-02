@@ -1,0 +1,60 @@
+
+body, html {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/bg.jpg);
+    background-size: auto 100%;
+    direction: rtl;
+}
+
+.header {
+    background-image: url(../img/bg-top-banner.jpg);
+    background-size: auto 100%;
+    padding: 10px 30px 40px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.footer {
+    background-image: url(../img/bg-footer-banner.jpg);
+    background-size: auto 100%;
+}
+
+
+.menu-item {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin: 10px;
+    background-color: #d4bfbf5e;
+    font-size: large;
+    min-width: 140px;
+    cursor: pointer;
+}
+
+    .menu-item.active {
+        background-color: antiquewhite;
+    }
+
+
+
+#main {
+    width: 70%;
+    margin: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#index {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+}
+
+
+#flipbook div img {
+    width: 100%;
+    height: 100%;
+}

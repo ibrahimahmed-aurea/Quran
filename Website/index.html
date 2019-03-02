@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+    <title>The Holy Quran</title>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <link type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="turnjs4/extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="turnjs4/lib/turn.js"></script>
+    <script type="text/javascript" src="turnjs4/lib/hash.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        yepnope({
+            test: Modernizr.csstransforms,
+            both: ['css/index.css']
+        });
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-item active">
+            القرآن الكريم
+        </div>
+        <div class="menu-item">
+            الأحاديث النبوية
+        </div>
+        <div class="menu-item">
+            أذكار الصباح والمساء
+        </div>
+    </div>
+    <div id="index">
+        <div>الفاتحة</div>
+        <div>البقرة</div>
+        <div>ال عمران</div>
+    </div>
+    <div id="main">
+
+        <div id="flipbook">
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

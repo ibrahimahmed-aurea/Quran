@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>The Holy Quran</title>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <link type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="turnjs4/extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="turnjs4/extras/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="turnjs4/lib/turn.js"></script>
+    <script type="text/javascript" src="turnjs4/lib/hash.js"></script>
+    <script type="text/javascript">
+        var bookWidth = 0, bookHeight = 0;
+        $(function () {
+
+            bookWidth = $(window).width();
+            bookHeight = $(window).height();
+            //$('#flipbook div img').css()
+            initTurnJS();
+        });
+        function initTurnJS() {
+            $('#canvas').hide();
+            var flipbook = $('#flipbook');
+
+            // Create the flipbook
+            flipbook.turn({
+
+                // Magazine width
+                width: bookWidth,
+
+                // Magazine height
+                height: bookHeight,
+
+                // Duration in millisecond
+                duration: 1000,
+
+                // Enables gradients
+                gradients: true,
+
+                // Auto center this flipbook
+                autoCenter: true,
+
+                // Elevation from the edge of the flipbook when turning a page
+                elevation: 50,
+
+                // The number of pages
+                pages: 8,
+
+                direction: 'rtl',
+
+                // Events
+                when: {
+                    turning: function (event, page, view) {
+
+                        var book = $(this),
+                            currentPage = book.turn('page'),
+                            pages = book.turn('pages');
+
+                        // Update the current URI
+
+                        Hash.go('page/' + page).update();
+
+                        // Show and hide navigation buttons
+
+
+                    },
+
+                    turned: function (event, page, view) {
+
+
+                        $(this).turn('center');
+
+                        //$('#slider').slider('value', getViewNumber($(this), page));
+
+                        if (page == 1) {
+                            $(this).turn('peel', 'br');
+                        }
+
+                    },
+
+                    missing: function (event, pages) {
+
+                        // Add pages that aren't in the magazine
+
+                        for (var i = 0; i < pages.length; i++)
+                            addPage(pages[i], $(this));
+
+                    }
+                }
+
+            });
+
+            flipbook.addClass('animated');
+
+            // Show canvas
+            $('#canvas').css({ visibility: '' });
+
+            // Load the HTML4 version if there's not CSS transform
+            yepnope({
+                test: Modernizr.csstransforms,
+                yep: ['turnjs4/lib/turn.js'],
+                nope: ['turnjs4/lib/turn.html4.min.js'],
+                both: ['css/index.css'],
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="flipbook" class="shadow">
+        <div class="hard quran-page"><img src="data/quraan/madina/1.png" /></div>
+        <div class="hard quran-page"><img src="data/quraan/madina/2.png" /></div>
+        <div class="quran-page"> <img src="data/quraan/madina/3.png" /></div>
+        <div class="quran-page"> <img src="data/quraan/madina/4.png" /></div>
+        <div class="quran-page"> <img src="data/quraan/madina/5.png" /></div>
+        <div class="quran-page"> <img src="data/quraan/madina/6.png" /></div>
+        <div class="hard quran-page"><img src="data/quraan/madina/7.png" /></div>
+        <div class="hard quran-page"><img src="data/quraan/madina/8.png" /></div>
+    </div>
+
+</body>
+</html>
