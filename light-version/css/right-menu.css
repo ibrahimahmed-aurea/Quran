@@ -1,0 +1,84 @@
+﻿#rightMenu {
+    position: fixed;
+    top: 0px;
+    right: -500px;
+    background-color: #FCFBFC;
+    border-left: 1px solid #EFEFEF;
+    min-width: 200px;
+    height: 100%;
+    padding-top: 10%;
+    margin: 0px;
+    text-align: right;
+    z-index: 9999;
+    padding: 7% 3px 10px;
+}
+
+    #rightMenu li {
+        margin: 20px 0px;
+        list-style-type: none;
+    }
+
+    #rightMenu * {
+        font-size: medium;
+    }
+
+    #rightMenu a {
+        text-decoration: none;
+        color: gray;
+        margin-right: 20px;
+    }
+
+.current-page {
+    font-weight: bold;
+    margin-bottom: 40px !important;
+    color: #464646;
+}
+
+#rightMenu img {
+    max-width: 16px;
+    vertical-align: middle;
+}
+
+.back-img {
+    margin-right: 20px;
+}
+
+.user-name {
+    color: #464646;
+    font-size: 12px;
+    padding: 10px 20px 30px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.logout {
+    color: #FE5576;
+    font-size: 14px;
+    text-align: center;
+}
+
+.side-menu-link {
+    padding-right: 20px;
+}
+
+/****************  Localization  ***************/
+body[language-dir="ltr"] #rightMenu {
+    text-align: left;
+}
+
+body[language-dir="ltr"] .user-name {
+    padding: 10px 10px 30px 20px;
+}
+
+body[language-dir="ltr"] .side-menu-link {
+    padding: 0px 5px 0px 20px;
+}
+
+body[language-dir="ltr"] #rightMenu .back-img {
+    margin-left: 20px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
