@@ -1,6 +1,6 @@
 
 body, html {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     margin: 0px;
     padding: 0px;
     background-image: url(../img/bg.jpg);
@@ -11,18 +11,23 @@ body, html {
 #main {
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 .page {
     width: 100%;
     height: 100%;
     text-align: center;
+    display: inline-block;
 }
 
     .page img {
         width: 100%;
-        max-height: 100%;
+        height: 100%;
+        user-select: none; /* supported by Chrome and Opera */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
     }
 
 .landscape #main {
@@ -35,4 +40,9 @@ body, html {
 
 .landscape .page {
     height: initial;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    // Safari and Chrome
 }
